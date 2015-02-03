@@ -49,6 +49,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
 ROOT_URLCONF = 'django_site.urls'
 
 WSGI_APPLICATION = 'django_site.wsgi.application'
@@ -69,7 +71,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'WAT'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
